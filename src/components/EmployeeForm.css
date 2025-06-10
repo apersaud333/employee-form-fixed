@@ -1,0 +1,35 @@
+.employee-form {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.employee-form h2 {
+  text-align: center;
+}
+
+.employee-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.employee-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.employee-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
