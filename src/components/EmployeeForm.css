@@ -1,35 +1,88 @@
+/* Container styling */
 .employee-form {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
   margin: 40px auto;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f8f8f8;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
+/* Form header */
 .employee-form h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* Labels */
 .employee-form label {
-  display: block;
-  margin-top: 10px;
   font-weight: bold;
+  color: #444;
 }
 
-.employee-form input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-}
-
-.employee-form button {
-  margin-top: 15px;
-  width: 100%;
+/* Input fields */
+.employee-form input[type="text"],
+.employee-form input[type="email"] {
   padding: 10px;
-  background-color: #4CAF50;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.employee-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.employee-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.employee-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .employee-form {
+    padding: 15px;
+  }
+}
+
+/* Optional dark mode support */
+.employee-form.dark {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.employee-form.dark input,
+.employee-form.dark label {
+  background-color: #444;
+  color: #eee;
+  border-color: #666;
+}
+
+.employee-form.dark button {
+  background-color: #444;
+  color: #fff;
+}
+
+.employee-form.dark button:hover {
+  background-color: #666;
+}
+
